@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+       <h3><i class="wi wi-day-sunny"></i>
+ weather now</h3>
+    </div>
+    <nav>
+  <select id="unit">
+    <option value="">&#127757; units</option>
+    <option value="temperature">Temperature (°C)</option>
+    <option value="humidity">Humidity (%)</option>
+    <option value="wind">Wind Speed (km/h)</option>
+    <option value="precipitation">Precipitation (mm)</option>
+  </select>
+</nav>
+
+
+  </header>
+  <main>
+    <section class="search">
+      <h1>How's the sky looking today?</h1>
+      <div>
+        <input type="search" placeholder="🔍  Search for a place..." id="searchInp"/>
+        <button type="submit" id="searchBtn">search</button>
+      </div>
+    </section>
+    <section class="details">
+      <div class="right">
+        <div class="card">
+          <div>
+            <h3 id="city">Berlin , Germany</h3>
+            <p>Tuesday , Aug 5 ,2025</p>
+          </div>
+          <div class="num">
+            <i class="wi wi-day-sunny"></i>
+
+            <h1 class="main-temp">20°</h1>
+          </div>
+        </div>
+       <div class="info-day">
+  <div class="info-card">
+    <i class="wi wi-thermometer"></i> <p>Feels Like</p>
+    <h3 class="feels-val">18°</h3>
+  </div>
+  <div class="info-card">
+    <i class="wi wi-humidity"></i> <p>Humidity</p>
+    <h3 class="humidity-val">46%</h3>
+  </div>
+  <div class="info-card">
+    <i class="wi wi-strong-wind"></i> <p>Wind</p>
+    <h3 class="wind-val"> 14 km/h</h3>
+  </div>
+  <div class="info-card">
+    <i class="wi wi-raindrop"></i> <p>Precipitation</p>
+    <h3 class="rain-val">0 mm</h3>
+  </div>
+</div>
+
+
+        <h3 class="day">Daily forecast</h3>
+        <div class="Daily">
+  <div class="day-card">
+    <p>Tue</p>
+    <i class="wi wi-day-snow"></i>
+    <p><span>20°</span><span>14°</span></p>
+  </div>
+  <div class="day-card">
+    <p>Wed</p>
+    <i class="wi wi-day-rain"></i>
+    <p><span>21°</span><span>15°</span></p>
+  </div>
+  <div class="day-card">
+    <p>Thu</p>
+    <i class="wi wi-day-sunny"></i>
+    <p><span>24°</span><span>14°</span></p>
+  </div>
+  <div class="day-card">
+    <p>Fri</p>
+    <i class="wi wi-day-cloudy"></i>
+    <p><span>25°</span><span>13°</span></p>
+  </div>
+  <div class="day-card">
+    <p>Sat</p>
+    <i class="wi wi-thunderstorm"></i>
+    <p><span>21°</span><span>15°</span></p>
+  </div>
+  <div class="day-card">
+    <p>Sun</p>
+    <i class="wi wi-cloud"></i>
+    <p><span>25°</span><span>16°</span></p>
+  </div>
+  <div class="day-card">
+    <p>Mon</p>
+    <i class="wi wi-strong-wind"></i>
+    <p><span>24°</span><span>15°</span></p>
+  </div>
+</div>
+
+      </div>
+     <div class="left">
+  <div class="sel-day">
+    <h3>Hourly forecast</h3>
+    <select id="day">
+      <option value="saturday">Saturday</option>
+      <option value="sunday">Sunday</option>
+      <option value="monday">Monday</option>
+      <option value="tuesday">Tuesday</option>
+      <option value="wednesday">Wednesday</option>
+      <option value="thursday">Thursday</option>
+    </select>
+  </div>
+  
+  <div class="forecast">
+    <div class="forecast-item"><i class="wi wi-cloud"></i> <h3>3 PM</h3> <p>20°</p></div>
+    <div class="forecast-item"><i class="wi wi-day-cloudy"></i> <h3>4 PM</h3> <p>20°</p></div>
+    <div class="forecast-item"><i class="wi wi-day-sunny"></i> <h3>5 PM</h3> <p>20°</p></div>
+    <div class="forecast-item"><i class="wi wi-cloud"></i> <h3>6 PM</h3> <p>19°</p></div>
+    <div class="forecast-item"><i class="wi wi-snow"></i> <h3>7 PM</h3> <p>18°</p></div>
+    <div class="forecast-item"><i class="wi wi-strong-wind"></i> <h3>8 PM</h3> <p>18°</p></div>
+    <div class="forecast-item"><i class="wi wi-snow"></i> <h3>9 PM</h3> <p>17°</p></div>
+    <div class="forecast-item"><i class="wi wi-cloud"></i> <h3>10 PM</h3> <p>17°</p></div>
+  </div>
+</div>
+
+    </section>
+    
+  </main>
+  <footer>
+    
+  </footer>
+  
+  <script src="main.js"></script>
+</body>
+
+</html>
