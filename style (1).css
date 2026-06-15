@@ -1,0 +1,298 @@
+body{
+  background: #0d0013;
+  color: #fff;
+  padding: 50px;
+  height: 100vh;
+}
+.logo i {
+  color: #f39c12;
+  font-size: 1.2em;
+  margin-right: 8px;
+  vertical-align: middle;
+  transition: transform 2s ease;
+}
+.logo:hover i {
+  transform: rotate(360deg);
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+header nav select{
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  color: #fff;
+  padding: 7px;
+}
+.search {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.search h1{
+  font-size: 45px;
+}
+.search div{
+  width: 470px;
+  height: 40px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.search div input{
+  border: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.3);
+ ;
+ width: 400px;
+ padding: 5px;
+ border-radius: 10px;
+ outline: none;
+ transition: all 0.3s ease;
+}
+.search-box input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+.search div button{
+  background: #5d3a9b;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px;
+  transition: all 1s ease;
+}
+.search div button:hover {
+  background: #f0f0f0;
+  color: #5d3a9b;
+  transform: scale(1.05);
+}
+.details{
+  height: 550px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.right {
+  width: 65%;
+margin: 2px;
+}
+.left{
+  width: 28%;
+margin: 2px;
+padding: 2px;
+border-radius: 10px;
+background: rgba(255, 255, 255, 0.3);
+}
+.card{
+  background: linear-gradient(#5d3a9b,#4f3186);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 550px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 20px;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #6a45ad, #583995);
+}
+.num{
+  width: 26%;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+}
+.num i {
+  font-size: 2.5rem;
+  color: #f39c12;
+  transition: transform 1s ease;
+}
+.card:hover .num i {
+  transform: rotate(20deg) scale(1.1);
+}
+
+.num h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+.info-day {
+  display: flex;
+  width: 590px;
+  justify-content: space-between;
+  margin: 20px 0;
+  gap: 15px;
+}
+
+.info-card {
+  width: 23%;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.info-card:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.info-card i {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  display: block;
+  color: #f39c12;
+}
+
+.info-card p {
+  margin: 0;
+  font-size: 0.75rem;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+.info-card h3 {
+  margin: 5px 0 0;
+  font-size: 1.1rem;
+}
+.Daily{
+  width: 590px ;
+  display: flex;
+  justify-content: space-between;
+}
+.day-card {
+  width: 13%;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 2px;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 1s ease;
+}
+.day-card:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.day-card i {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  display: block;
+  color: #f39c12;
+}
+.day-card p span{
+  margin: 7px;
+}
+.day-card p span:first-child { font-weight: bold; }
+.day-card p span:last-child { opacity: 0.7; font-size: 0.8rem; }
+.sel-day{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sel-day select{
+  background: rgba(255, 255, 255, 0.2);
+  padding: 3px;
+  color: #fff;
+}
+.forecast-item{
+  display: flex;
+  margin: 5px;
+  padding: 0 5px;
+  background: rgba(255, 255, 255, 0.2) ;
+  justify-content: space-between;
+  border-radius: 10px;
+  height: 53px;
+  transition: all 1s ease;
+}
+.forecast-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.02);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+.forecast-item i {
+  font-size: 1.4rem;
+  color: #f39c12;
+  width: 30px;
+  margin: auto 0;
+  transition: all 0.5s ease;
+}
+.forecast-item:hover i {
+  color: #ffce54;
+  text-shadow: 0 0 10px rgba(243, 156, 18, 0.6);
+  transform: scale(1.2);
+}
+@media (max-width: 600px){
+  body{
+    padding: 10px;
+  }
+  .search h1{
+    text-align: center;
+  }
+  .search div{
+    display: block;
+  }
+  .search div button,.search div input{
+    display: block;
+    width: 60%;
+    translate: 100px;
+    padding: 5px;
+    margin: 5px;
+    height: 30px;
+  }
+  .details{
+    display: block;
+  }
+  .card{
+    flex-direction: column;
+    width: 240px;
+    translate: 36px 40px;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  .num{
+    width: 50%;
+  }
+  .info-day{
+    display: grid;
+    width: 240px;
+    translate: 36px 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .info-card{
+    width: 100px;
+    margin: 10px 0;
+  }
+  .day{
+    translate: 35px;
+  }
+  .Daily{
+    display: grid;
+    width: 270px;
+    translate: 15px ;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .Daily div{
+    width: 80px;
+    margin: 10px;
+  }
+  .left{
+    width: 290px;
+    translate: 15px;
+  }
+}
