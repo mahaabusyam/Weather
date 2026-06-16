@@ -189,3 +189,18 @@ document.querySelector("#unit").addEventListener("change", (e) => {
             displayElement.innerHTML = `${Math.round(currentData.main.temp)}°`;
     }
 });
+
+const element = document.getElementById('date-display');
+const now = new Date();
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+const dateString = now.toLocaleDateString('en-US', {
+    weekday: 'long', 
+    year: 'numeric', 
+    month: 'long', 
+    day: 'numeric'
+});
+
+element.textContent = dateString;
+
+                
